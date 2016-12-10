@@ -12,9 +12,10 @@ html
     // endinject
   body
     .container
-      h1 ESPACIOS
+      h1 EVENTOS
       each thing in data
         a(href='evento/#{thing._id}') #{thing.name}
+        br
     // inject:js
     script(src='js/vendor/jquery.min.js')
     script(src='js/vendor/requestAnimationFrame.min.js')

@@ -15,6 +15,7 @@ html
       h1 ESPACIOS
       each thing in data
         a(href='vecino/#{thing.username}') #{thing.name}
+        br
     // inject:js
     script(src='js/vendor/jquery.min.js')
     script(src='js/vendor/requestAnimationFrame.min.js')

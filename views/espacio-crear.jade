@@ -1,0 +1,95 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='../style/images/favicon.png')
+    title= title
+    // Bootstrap core CSS
+    link(href='../style/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../style/css/plugins.css', rel='stylesheet')
+    link(href='../style.css', rel='stylesheet')
+    link(href='../style/css/color/blue.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    link(href='../style/type/icons.css', rel='stylesheet')
+    link(href='../estilos.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    #preloader
+      #status
+        .spinner
+    .body-wrapper
+      .navbar.navbar-default.default
+        .container
+          .navbar-header
+            .basic-wrapper
+              a.btn.responsive-menu(data-toggle='collapse', data-target='.navbar-collapse')
+                i
+              .navbar-brand
+                a(href='/', style='color:#006ba0')
+                  Team Creatisidro
+                  // img.logo-light(src='#', srcset='../style/images/logo.png 1x, ../style/images/logo@2x.png 2x', alt='')
+                  // img.logo-dark(src='#', srcset='../style/images/logo-dark.png 1x, ../style/images/logo-dark@2x.png 2x', alt='')
+              // /.navbar-brand
+            // /.basic-wrapper
+          // /.navbar-header
+          nav.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/') Inicio
+              li
+                a(href='/creativos') Creativos
+              li
+                a(href='/espacios') Espacios
+              li
+                a(href='/eventos') Eventos
+              li
+                a(href='/registro') Registro/Login
+            // /.navbar-nav
+          // /.navbar-collapse
+        // /.container
+      // /.navbar
+      .light-wrapper
+        .container.inner
+          .headline.text-center
+            h2 ¡Ofrece un espacio para creativos!
+            #registro
+              label(for='name') Nombre
+              input(type='text', id='name', placeholder='Nombre de tu espacio')
+              br
+              label(for='photos') Fotografia
+              input(type='text', id='photos', placeholder='Foto del espacio que ofrecerás')
+              br
+              label(for='resumen') Descripcion
+              input(type='text', id='resumen', placeholder='Cuentales un poco del lugar')
+              br
+              label(for='dimensiones') Dimensiones
+              input(type='text', id='height', placeholder='Ancho')
+              br
+              input(type='text', id='width', placeholder='Largo')
+              br
+              label(for='owner') Dueño
+              input(type='text', id='owner', placeholder='Tu nombre y correo')
+              br
+              label(for='Ubicacion') Ubicacion
+              input(type='text', id='height', placeholder='Donde queda el espacio')
+              br
+              br
+              button#reg-startup.button.landing-outro__button.button--large
+                span
+                  | Registrar
+              br
+
+    script(src='../../style/js/jquery.min.js')
+    script(src='../../style/js/bootstrap.min.js')
+    script(src='../../style/js/plugins.js')
+    script(src='../../style/js/jquery.themepunch.tools.min.js')
+    script(src='../../style/js/scripts.js')
+    script(src="../javascripts/scripts.js")

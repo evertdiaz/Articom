@@ -34,7 +34,7 @@ router.post('/user', function(req, res, next) {
 	var web = req.body.web
 	var type = req.body.type
 	var newuser = new User()
-	newuser.nombre = nombre
+	newuser.username = username
 	newuser.password = password
 	newuser.name = name
 	newuser.mainCat = mainCat
@@ -72,9 +72,7 @@ router.post('/space', function(req, res, next) {
 	var height = req.body.height
 	var width = req.body.width
 	var owner = req.body.owner
-	var lat = req.body.lat
-	var lon = req.body.lon
-	var zoom = req.body.zoom
+	var ubicacion = req.body.ubicacion
 	var newspace = new Space()
 	newspace.name = name
 	newspace.photos = photos
@@ -83,9 +81,6 @@ router.post('/space', function(req, res, next) {
 	newspace.height = height
 	newspace.width = width
 	newspace.owner = owner
-	newspace.lat = lat
-	newspace.lon = lon
-	newspace.zoom = zoom
 	newspace.save(function(err, savedSpace) {
 		if(err) {
 			console.log(err)

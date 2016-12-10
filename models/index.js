@@ -17,18 +17,13 @@ var User = mongoose.model('users')
 
 var spaceSchema = new Schema({
 	name: String,
-	photos: Array,
+	photos: String,
 	type: String,
 	bio: String,
 	height: Number,
 	width: Number,
-	owner: {
-		type: Schema.ObjectId,
-		ref: 'users'
-	},
-	lat: Number,
-	lon: Number,
-	zoom: Number
+	owner: String,
+	ubicacion: String
 })
 mongoose.model('spaces', spaceSchema)
 var Space = mongoose.model('spaces')
@@ -38,16 +33,10 @@ var eventSchema = new Schema({
 	bio: String,
 	mainCat: String,
 	categories: Array,
-	host: {
-		type: Schema.ObjectId,
-		ref: 'users'
-	},
+	host: String,
 	members: Array,
 	link: String,
-	space: {
-		type: Schema.ObjectId,
-		ref: 'spaces'
-	}
+	space: String
 })
 mongoose.model('events', eventSchema)
 var Event = mongoose.model('events')

@@ -5,17 +5,17 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='shortcut icon', href='style/images/favicon.png')
+    link(rel='shortcut icon', href='../style/images/favicon.png')
     title= title
     // Bootstrap core CSS
-    link(href='style/css/bootstrap.min.css', rel='stylesheet')
-    link(href='style/css/plugins.css', rel='stylesheet')
-    link(href='style.css', rel='stylesheet')
-    link(href='style/css/color/blue.css', rel='stylesheet')
+    link(href='../style/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../style/css/plugins.css', rel='stylesheet')
+    link(href='../style.css', rel='stylesheet')
+    link(href='../style/css/color/blue.css', rel='stylesheet')
     link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
-    link(href='style/type/icons.css', rel='stylesheet')
-    link(href='estilos.css', rel='stylesheet')
+    link(href='../style/type/icons.css', rel='stylesheet')
+    link(href='../estilos.css', rel='stylesheet')
     // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9
@@ -59,23 +59,16 @@ html(lang='en')
       .light-wrapper
         .container.inner
           .headline.text-center
-            h2 Registrate
+            h2 Crea un nuevo evento
             
             #registro
-              label(for='name') Usuario
+              label(for='name') Nombre
               input(type='text', id='name', placeholder='Ingreso tu Nombre de usuario')
               br
-              label(for='password') Contraseña
-              input(type='password', id='password', placeholder='Ahora tu contraseña')
+              label(for='bio') Descripcion del evento
+              input(type='text', id='bio', placeholder='Un resumen de tu evento.')
               br
-              label(for='names') Nombres y Apellidos:
-              input(type='text', id='names', placeholder='Ingresa tus nombres y apellidos completos')
-              br
-              br
-              label(for='bio') Acerca de ti
-              input(type='text', id='bio', placeholder='Cuéntanos un poco sobre ti')
-              br
-              label(for='profile') Elige tu perfil:
+              label(for='profile') Que tipo de arte tiene tu evento:
               select(name='profile')
                 option(value='pintura') Pintura
                 option(value='graffiti') Graffiti
@@ -106,34 +99,27 @@ html(lang='en')
               |  Comedia  |
               
               br
-              label(for='portafolio') Web o portafolio
-              input(type='text', id='portafolio', placeholder='Web o portafolio')
+              label(for='portafolio') Host
+              input(type='text', id='portafolio', placeholder='Tu nombre y correo')
               br
-              label(for='type') Tipo (vecino o creativo, en minusculas por favor)
-              input(type='text', id='type', placeholder='Cuentanos que tipo eres')
+              label(for='portafolio') Link de detalle del evento
+              input(type='text', id='portafolio', placeholder='De facebook, eventbrite u otros')
               br
-              button#envio-reg.button.landing-outro__button.button--large
+              label(for='portafolio') Espacio
+              input(type='text', id='portafolio', placeholder='Direccion del espacio')
+              br
+
+              
+              button#reg-evento.button.landing-outro__button.button--large
                 span
                   | Registrar
               br
-              a#login-btn.link-effect(href='#') ¿Ya tienes una cuenta? Ingresar
+              
 
-            #login-form
-              label(for='username') Usuario
-              input(type='text', id='username', placeholder='Ingresa tu usuario')
-              label(for='password') Contraseña
-              input(type='password', id='contraseña', placeholder='Y ahora tu contraseña')
-              br
-              button#envio-log.button.landing-outro__button.button--large
-                span
-                  | Entrar
-              br
-              br
-              a#register-btn.link-effect(href='#') ¿No tienes una cuenta? Regístrate
 
-    script(src='style/js/jquery.min.js')
-    script(src='style/js/bootstrap.min.js')
-    script(src='style/js/plugins.js')
-    script(src='style/js/jquery.themepunch.tools.min.js')
-    script(src='style/js/scripts.js')
-    script(src="javascripts/scripts.js")
+     script(src='../../style/js/jquery.min.js')
+    script(src='../../style/js/bootstrap.min.js')
+    script(src='../../style/js/plugins.js')
+    script(src='../../style/js/jquery.themepunch.tools.min.js')
+    script(src='../../style/js/scripts.js')
+    script(src="../javascripts/scripts.js")
