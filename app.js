@@ -47,7 +47,8 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
-mongoose.connect('mongodb://localhost/msi')
+// mongoose.connect('mongodb://localhost/msi')
+mongoose.connect('mongodb://admin:admin@ds127958.mlab.com:27958/heroku_ssbp2zsj')
 var db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'));
 // development error handler
