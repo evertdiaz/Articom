@@ -1,0 +1,78 @@
+.container-profile{
+    padding: 25px 175px;
+}
+.img-franja{
+    background-image: url("../assets/media/components/creativo/franja.PNG");
+    height: 20px;
+}
+.container-header{
+    padding: 25px 150px;
+}
+.creativo{
+    color: black;
+    padding-left: 10px;
+    border: 2px gray solid;
+    font-size: 14px;
+}
+.circle{
+    height:120px;
+    width:120px;
+    background:grey;
+    border-radius:100%;
+    color:white;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin: 15px;
+    margin-left: 20px;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+}
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+.btn, .btn-large, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+.number{
+    font-size: 35px;
+}
+.subtitle{
+    font-size: 12px;
+}
+.circle-2{
+    background-color:#628961;
+}
+.circle-3{
+    background-color: #86415c;
+}
+.circle-1{
+    background-color: #3c566b;
+}

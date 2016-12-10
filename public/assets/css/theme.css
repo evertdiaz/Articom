@@ -3282,8 +3282,8 @@ body {
 .b-type-f__center-block {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  margin-left: -207px;
+  margin-left: 180px;
+  width: 75%;
 }
 
 .b-type-f__right-block {

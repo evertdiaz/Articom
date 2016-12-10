@@ -66,9 +66,9 @@ html.no-js(lang='en')
           .creativo.col-md-3
             .creativo-img(style='height:100px;width:100px;background:grey;border-radius:100%')
             each thing in data
-              p=thing.name
+              a(href="/creativo/#{thing.username}")=thing.name
               p=thing.bio
-      
+
     script(src='assets/js/jquery.js')
     script(src='assets/js/custom.js')
     script(src='assets/js/bootstrap.min.js')

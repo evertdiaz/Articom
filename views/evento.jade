@@ -9,17 +9,20 @@ html.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(content='telephone=no', name='format-detection')
     meta(name='HandheldFriendly', content='true')
-    link(rel='stylesheet', href='assets/css/master.css')
+    link(rel='stylesheet', href='../assets/css/master.css')
     // SWITCHER
-    link#switcher-css(href='assets/plugins/switcher/css/switcher.css', rel='stylesheet', media='all')
-    link(href='assets/plugins/switcher/css/color1.css', rel='alternate stylesheet', title='color1', media='all')
-    link(href='assets/plugins/switcher/css/color2.css', rel='alternate stylesheet', title='color2', media='all')
-    link(href='assets/plugins/switcher/css/color3.css', rel='alternate stylesheet', title='color3', media='all')
-    link(href='assets/plugins/switcher/css/color4.css', rel='alternate stylesheet', title='color4', media='all')
+    link#switcher-css(href='../assets/plugins/switcher/css/switcher.css', rel='stylesheet', media='all')
+    link(href='../assets/plugins/switcher/css/color1.css', rel='alternate stylesheet', title='color1', media='all')
+    link(href='../assets/plugins/switcher/css/color2.css', rel='alternate stylesheet', title='color2', media='all')
+    link(href='../assets/plugins/switcher/css/color3.css', rel='alternate stylesheet', title='color3', media='all')
+    link(href='../assets/plugins/switcher/css/color4.css', rel='alternate stylesheet', title='color4', media='all')
     link(rel='icon', type='image/x-icon', href='favicon.ico')
-    link(rel='stylesheet', href='css/cocoen.min.css')
-    link(rel='stylesheet', href='css/demo.min.css')
-  body
+    link(rel='stylesheet', href='../css/cocoen.min.css')
+    link(rel='stylesheet', href='../css/demo.min.css')
+    link(rel='stylesheet', href='../css/font-awesome.css')
+    link(rel='stylesheet', href='../stylesheets/styles2.css')
+    link(rel='stylesheet', href='../stylesheets/styles3.css')
+  body(style="background-color:transparent")
     // Loader
     #page-preloader
       span.spinner
@@ -62,24 +65,45 @@ html.no-js(lang='en')
                 // end nav
       // end header
       
-      .section-default.section-default_top-padd.wow
-        h1 ESPACIOS
-      each thing in data
-        p=thing.name
-        p=thing.bio
+.row.container-header(style="display: flex;padding-bottom: 0;")
+  .col-md-3
+    img(src="../assets/media/components/creativo/logo.PNG" style="width: 200px; height: 135px;")
+  .col-md-9(style="align-self: center;")
+    h2 Nombre del Creativo
+.row
+  .col-md-12.img-franja
+.container-profile.row
+  .col-md-4
+      .creativo(style="margin-top: 25px")
+        h3="Detalles del Evento"
+        p="Lugar: Centro Cultural El Olivar"
+        p="Hora: 6.00 pm"
+        p="Fecha: Sábado 3 de Enero"
+        p="Artista: Juan Pérez"
+        a
+            i.fa.fa-facebook-official(style="font-size: 45px;")
+        a
+            i.fa.fa-twitter(style="font-size: 45px;margin-left: 15px;")
+        br
+      a.waves-effect.waves-light.btn(style="margin: 35px;margin-left: 90px;") Asistir
+    br
+  .col-md-8
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.18736844666!2d-76.98618758518626!3d-12.167643491386876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b84bd1372693%3A0xf67b69dabdf73661!2sjuegos+infantiles!5e0!3m2!1ses!2spe!4v1481387458891" ,width="600", height="450" ,frameborder="0", style="border:0" , allowfullscreen)
+
+
       
-    script(src='assets/js/jquery.js')
-    script(src='assets/js/custom.js')
-    script(src='assets/js/bootstrap.min.js')
-    script(src='assets/plugins/slider-pro/jquery.sliderPro.min.js')
-    script(src='assets/plugins/owl-carousel/owl.carousel.min.js')
-    script(src='assets/plugins/magnific-popup/jquery.magnific-popup.min.js')
-    script(src='assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js')
-    script(src='assets/plugins/doubletaptogo.js')
-    script(src='assets/plugins/waypoints.min.js')
-    script(src='assets/plugins/flowplayer/flowplayer.min.js')
-    script(src='assets/plugins/classie.js')
-    script(src='assets/plugins/scrollreveal/scrollreveal.min.js')
-    script(src='assets/plugins/switcher/js/dmss.js')
-    script(src='assets/plugins/jarallax/jarallax.min.js')
-    script(src='assets/plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js')
+    script(src='../assets/js/jquery.js')
+    script(src='../assets/js/custom.js')
+    script(src='../assets/js/bootstrap.min.js')
+    script(src='../assets/plugins/slider-pro/jquery.sliderPro.min.js')
+    script(src='../assets/plugins/owl-carousel/owl.carousel.min.js')
+    script(src='../assets/plugins/magnific-popup/jquery.magnific-popup.min.js')
+    script(src='../assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js')
+    script(src='../assets/plugins/doubletaptogo.js')
+    script(src='../assets/plugins/waypoints.min.js')
+    script(src='../assets/plugins/flowplayer/flowplayer.min.js')
+    script(src='../assets/plugins/classie.js')
+    script(src='../assets/plugins/scrollreveal/scrollreveal.min.js')
+    script(src='../assets/plugins/switcher/js/dmss.js')
+    script(src='../assets/plugins/jarallax/jarallax.min.js')
+    script(src='../assets/plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js')
