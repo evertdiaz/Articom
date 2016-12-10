@@ -62,11 +62,20 @@ html.no-js(lang='en')
                 // end nav
       // end header
       
-      .section-default.section-default_top-padd.wow
-        h1 EVENTOS
-      each thing in data
-        a(href='evento/#{thing._id}') #{thing.name}
-        br
+      .section-default
+        .row(style='background:#4abcff')
+          h2(style='text-align:center') Eventos Proximos hechos por creativos
+        .row
+          
+          each thing in data
+            .col-sm-12.col-md-6(style='height:100%;align:middle;text-align:center')
+              div(style='margin:10% 20%;border-radius:20px;background:#EEE;display:inline-block;margin-left:100px')
+                .col-sm-6
+                  img(src='https://media-cdn.tripadvisor.com/media/photo-s/02/3a/7d/63/parque-kennedy.jpg', style='height:150px;width:150px;border-radius:100%')
+                .col-sm-6
+                  br
+                  a(href='evento/#{thing._id}') #{thing.name}
+                  p=thing.bio
       
     script(src='assets/js/jquery.js')
     script(src='assets/js/custom.js')

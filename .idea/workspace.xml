@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5af3e600-6796-4895-9023-544030affff1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/styles2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/styles3.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/media/components/b-type-f/img-1.png" afterPath="$PROJECT_DIR$/public/assets/media/components/b-type-f/img-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/theme.css" afterPath="$PROJECT_DIR$/public/assets/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/creativo.jade" afterPath="$PROJECT_DIR$/views/creativo.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/creativos.jade" afterPath="$PROJECT_DIR$/views/creativos.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/evento.jade" afterPath="$PROJECT_DIR$/views/evento.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/espacios.jade" afterPath="$PROJECT_DIR$/views/espacios.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eventos.jade" afterPath="$PROJECT_DIR$/views/eventos.jade" />
     </list>
     <ignored path="Creatisidro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,17 +47,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creativos.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="creativos.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/creativos.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="602">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evento.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="evento.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/evento.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
@@ -102,12 +96,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/assets/css/theme.css" />
-        <option value="$PROJECT_DIR$/views/creativos.jade" />
         <option value="$PROJECT_DIR$/views/creativo.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/styles2.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/styles3.scss" />
         <option value="$PROJECT_DIR$/public/stylesheets/styles3.css" />
         <option value="$PROJECT_DIR$/views/evento.jade" />
+        <option value="$PROJECT_DIR$/views/creativos.jade" />
       </list>
     </option>
   </component>
@@ -367,15 +361,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481378090964</updated>
-      <workItem from="1481378092206" duration="11338000" />
+      <workItem from="1481378092206" duration="11486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11338000" />
+    <option name="totallyTimeSpent" value="11486000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -445,14 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/creativos.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/styles3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4815">
@@ -465,6 +451,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/creativos.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
