@@ -6,7 +6,9 @@ var Event = require('../models').Event
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' })
+	Event.find(function(err, eventos) {
+		res.render('index', { data: eventos , title: 'Creatisidro'})
+	})
 })
 
 router.get('/registro', function(req, res, next) {
