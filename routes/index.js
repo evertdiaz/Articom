@@ -39,7 +39,7 @@ router.get('/vecino/:username', function(req, res, next) {
 
 router.get('/espacios', function(req, res, next) {
 	Space.find(function(err, spaces) {
-		res.render('espacios', { data: espacios, title: 'Espacios' })
+		res.render('espacios', { data: spaces, title: 'Espacios' })
 	})
 })
 
@@ -63,13 +63,13 @@ router.get('/crear/evento', function(req, res, next) {
 
 router.get('/eventos', function(req, res, next) {
 	Event.find(function(err, events) {
-		res.render('Eventos', { data: events, title: 'Eventos'})
+		res.render('eventos', { data: events, title: 'Eventos'})
 	})
 })
 
 router.get('/evento/:id', function(req, res, next) {
 	Event.find({ _id: req.params.id }, function(err, evento) {
-		res.render('Evento', { data: evento, title: 'Evento' })
+		res.render('evento', { data: evento, title: 'Evento' })
 	})
 })
 
