@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var express = require('express')
 var cors = require('cors')
@@ -33,6 +34,14 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Middleware para sesiones sin cookies
+app.use(session({
+  secret: "l12lk3nk123jl",
+  // Es decir que al ingresar dos usuarios en paralelo no se contamine uno con el otro
+  resave: false,
+  // Indica si la sesion debe guardarse a pesar que sea nueva y no modificada (Es decir no inicializada)
+  saveUninitialized: false
+}))
 
 app.use('/', routes);
 app.use('/api', api);

@@ -3,6 +3,8 @@ var router = express.Router();
 var User = require('../models').User
 var Space = require('../models').Space
 var Event = require('../models').Event
+var no_session_middleware = require('../middlewares/no-session')
+var session_middleware = require('../middlewares/session')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,14 +13,48 @@ router.get('/', function(req, res, next) {
 	})
 })
 
-router.get('/registro', function(req, res, next) {
-	res.render('registro', { title: 'Registro' })
+router.get('/registro', no_session_middleware, function(req, res, next) {
+  res.render('registro', { title: 'Registro' });
+});
+
+router.get('/login', no_session_middleware, function(req, res, next) {
+  res.render('login', { title: 'Login' })
+})
+
+router.post('/logout', function(req, res, next) {
+  req.session = null
+  res.redirect('/')
+})
+
+router.get('/perfil', session_middleware, function(req, res, next) {
+  res.render('perfil', { title: 'Dashboard'})
+})
+
+router.post('/session', function(req, res) {
+  // Puede ponerse un segundo parametro que son los campos que quieren ser devueltos.
+  User.findOne({ username: req.body.username, password: req.body.password }, "", function(err, user) {
+    if(err) {
+      res.send(err)
+    }
+    else if(user!=null) {
+
+      req.session.user_id = user._id
+      res.redirect('/perfil')
+    }
+    else {
+      res.send('Ingresa un usuario valido')
+    }
+  })
 })
 
 router.get('/creativos', function(req, res, next) {
 	User.find({ type: 'creativo' }, function(err, users) {
 		res.render('creativos', { data: users, title: 'Creativos'})
 	})
+})
+
+router.get('/perfil', function(req, res) {
+	res.send('HOLAAAAA')
 })
 
 router.get('/creativo/:username', function(req, res, next) {
